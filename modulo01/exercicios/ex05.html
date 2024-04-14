@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício 05</title>
+    </head>
+    <body>
+        <script>
+            var a = +prompt('Lado A: ')
+            var b = +prompt('Lado B: ')
+            var c = +prompt('Lado C: ')
+
+            if((a+b) > c && (a+c) > b && (b+c) > a){
+                document.write('É um triângulo: ')
+                if((a==b) && (b == c) && (c == a)){
+                    document.write('Equilátero')
+                }else if((a!=b) && (b != c) && (c != a)){
+                    document.write('Escaleno')
+                }else if((a==b) || (b == c) || (c == a)){
+                    document.write('Isósceles')
+                }
+            }else{
+                document.write('Isso com certeza não é um triângulo')
+            }
+        </script>
+    </body>
+</html>

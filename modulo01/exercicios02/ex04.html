@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 04 - 2ª Lista</title>
+    </head>
+    <body>
+        <script>
+            
+            alert('[1] para doar R$10 | [2] para doar R$25 | [3] para doar R$50 | [4] para doar outros valores | [5] para cancelar')
+
+            let valorDoacao = +prompt('Digite a opção para doar:')
+
+            switch(valorDoacao){
+                case 1:
+                    document.write('Foi doado R$10,00' + '<br>')
+                    document.write('Agradecemos pela doação')
+                    break
+                case 2:
+                    document.write('Foi doado R$25,00' + '<br>')
+                    document.write('Agradecemos pela doação')
+                    break
+                case 3:
+                    document.write('Foi doado R$50,00' + '<br>')
+                    document.write('Agradecemos pela doação')
+                    break
+                case 4:
+                    let outroValorDoacao = +prompt("Digite o valor da doação:")
+                    document.write('Foi dado R$' + outroValorDoacao.toFixed(2).replace('.', ',') + '<br>')
+                    document.write('Agradecemos pela doação')
+                    break
+                case 5:
+                    document.write('Nenhum valor foi doado')
+                    break
+            }
+        </script>
+    </body>
+</html>

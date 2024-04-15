@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 06 - 2ª Lista</title>
+    </head>
+    <body>
+        <script>
+            let i = +prompt('Valor i: ')
+            let n1 = +prompt('Valor n1: ')
+            let n2 = +prompt('Valor n2: ')
+            let n3 = +prompt('Valor n3: ')
+
+            switch(i){
+                case 1:
+                    if(n1 > n2 && n1 > n3){
+                        if(n2 > n3){
+                            document.write(n1, n2, n3)
+                        }else{
+                            document.write(n1, n3, n2)
+                        }
+                    }else if(n2 > n1 && n2 > n3){
+                        if(n1 > n3){
+                            document.write(n2, n1, n3)
+                        }else{
+                            document.write(n2, n3, n1)
+                        }
+                    }else{
+                        if(n1 > n2){
+                            document.write(n3, n1, n2)
+                        }else{
+                            document.write(n3, n2, n1)
+                        }
+                    }
+                    break
+                case 2:
+                    if(n1 > n2 && n1 > n3){
+                        if(n2 > n3){
+                            document.write(n3, n2, n1)
+                        }else{
+                            document.write(n2, n3, n1)
+                        }
+                    }else if(n2 > n1 && n2 > n3){
+                        if(n1 > n3){
+                            document.write(n3, n1, n1)
+                        }else{
+                            document.write(n1, n3, n2)
+                        }
+                    }else{
+                        if(n1 > n2){
+                            document.write(n2, n1, n3)
+                        }else{
+                            document.write(n1, n2, n3)
+                        }
+                    }
+                    break
+                case 3:
+                    if(n1 > n2 && n1 > n3){
+                        if(n2 > n3){
+                            document.write(n2, n1, n3)
+                        }else{
+                            document.write(n3, n1, n2)
+                        }
+                    }else if(n2 > n1 && n2 > n3){
+                        if(n1 > n3){
+                            document.write(n1, n2, n3)
+                        }else{
+                            document.write(n3, n2, n1)
+                        }
+                    }else{
+                        if(n1 > n2){
+                            document.write(n1, n3, n2)
+                        }else{
+                            document.write(n2, n3, n1)
+                        }
+                    }
+                    break
+                default:
+                    document.write('Valor de i é inválido')
+            }
+        </script>
+    </body>
+</html>
